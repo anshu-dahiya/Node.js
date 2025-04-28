@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2",
+    "server": "file:",
     "url": "^0.11.3"
   }
 }
