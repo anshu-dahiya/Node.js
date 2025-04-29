@@ -9,6 +9,7 @@ fs.stat('file.txt',(err,stats) => {
     console.log(stats);
 })
 
+
 //sync stat
 const stats = fs.statSync('file.txt')
 

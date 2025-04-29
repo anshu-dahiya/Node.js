@@ -1,3 +1,4 @@
+//FS = File System, fs operation can perfromed async and sync way
 const fs = require('fs');
 
 //async read 
