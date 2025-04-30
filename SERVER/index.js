@@ -1,14 +1,14 @@
-const express  = require("express");  
- 
-const app = express();
+const http = require('http');
 
-app.get("/", (req, res) => {
-    return res.send("Welcome to Home Page");
-});
+const server = http.createServer((req,res) => {
+    if(req.url === '/'){
+        res.end("Home Page");
+    }
+    if(req.url === '/about'){
+        res.end("About Page");
+    }
+})
 
-app.get("/about", (req, res) => {
-    return res.send(`Welcome ${req.query.name.toUpperCase()}`);
-});
-
-
-app.listen(8000, () => console.log("Server Started!"));
+server.listen(3000,() => {
+    console.log("Server is running on port 3000");
+})
